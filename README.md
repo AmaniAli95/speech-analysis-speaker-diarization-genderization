@@ -23,7 +23,9 @@ To run this project, you need the following dependencies:
 You can get started by cloning this repository:
 
 ```bash
-git clone https://github.com/x4nth055/gender-recognition-by-voice
+git clone https://github.com/x4nth055/gender-recognition-by-voice```
+
+After cloning, install the required libraries using pip:
 
 
 After cloning, install the required libraries using pip:
