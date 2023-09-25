@@ -21,52 +21,58 @@ To run this project, you need the following dependencies:
 ## Getting Started
 
 You can get started by cloning this repository:
-
 ```bash
-git clone https://github.com/x4nth055/gender-recognition-by-voice```
+git clone https://github.com/x4nth055/gender-recognition-by-voice
+```
 
 After cloning, install the required libraries using pip:
-
-
-After cloning, install the required libraries using pip:
+```bash
 pip3 install -r requirements.txt
+```
 
-Dataset
-This project uses the Mozilla's Common Voice large dataset for training. The dataset has been preprocessed as follows:
+## Dataset
+This project uses "Mozilla's Common Voice large dataset for training. The dataset has been preprocessed as follows:
 
-Invalid samples have been filtered out.
-Only samples labeled in the genre field have been used.
-The dataset has been balanced to ensure an equal number of male and female samples.
-Mel Spectrogram feature extraction technique has been used to create a fixed-length feature vector from each audio sample.
-The data folder contains the preprocessed features in .npy format, not the actual audio samples.
+- Invalid samples have been filtered out.
+- Only samples labeled in the genre field have been used.
+- The dataset has been balanced to ensure an equal number of male and female samples.
+- Mel Spectrogram feature extraction technique has been used to create a fixed-length feature vector from each audio sample.
+- The data folder contains the preprocessed features in .npy format, not the actual audio samples.
 
-If you want to download and preprocess the dataset yourself, use the preparation.py script. Place it in the root directory of the 
+If you want to download and preprocess the dataset yourself, use the ```preparation.py``` script. Place it in the root directory of the 
 dataset and run it. This will extract features from the audio files and generate new .csv files.
 
-Training
-To train the model, you can customize it in the utils.py file under the create_model() function. After customization, run:
+## Training
+To train the model, you can customize it in the ```utils.py``` file under the create_model() function. After customization, run:
+```bash
 python train.py
-
-You can specify a file to test, like this:
-python test.py --file "test-samples/27-124992-0002.wav"
-
-Or, to use your voice, simply run:
+```
+## Testing
+Use the ```test.py``` script to test your audio files or your voice for gender recognition:
+```bash
 python test.py
+```
 
 The script will record your voice and make gender predictions.
 
-Sample Usage
+## Sample Usage
 Here's an example of testing a file:
+```bash
 python test.py --file "test-samples/27-124992-0002.wav"
+```
 
-Output:
+**Output:**
+```yaml
 Result: male
 Probabilities: Male: 96.36%    Female: 3.64%
+```
 
 There are some audio samples provided in the test-samples folder for you to test with, taken from the LibriSpeech dataset.
 
 To use your voice, run the test script and follow the prompts:
+```bash
 python test.py
+```
 
 Wait until you see "Please speak" and start talking; it will stop recording when you stop speaking.
 
