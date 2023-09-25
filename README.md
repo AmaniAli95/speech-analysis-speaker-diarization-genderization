@@ -39,7 +39,7 @@ This project uses "Mozilla's Common Voice large dataset for training. The datase
 - Mel Spectrogram feature extraction technique has been used to create a fixed-length feature vector from each audio sample.
 - The data folder contains the preprocessed features in .npy format, not the actual audio samples.
 
-If you want to download and preprocess the dataset yourself, use the ```preparation.py``` script. Place it in the root directory of the 
+If you want to download and preprocess the dataset yourself, use the ```audio-prep.py``` script. Place it in the root directory of the 
 dataset and run it. This will extract features from the audio files and generate new .csv files.
 
 ## Training
