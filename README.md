@@ -1,4 +1,4 @@
-# audio-analysis
+# Speach Analysis Speaker Diarization and Genderization
 
 This repository contains a deep learning model built using TensorFlow 2 for gender recognition based on speaker's audio. It aims to 
 classify the gender of a speaker from an audio sample.
