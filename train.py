@@ -33,6 +33,3 @@ def evaluate_model(model, X_test, y_test):
     loss, accuracy = model.evaluate(X_test, y_test, verbose=0)
     print(f"Loss: {loss:.4f}")
     print(f"Accuracy: {accuracy * 100:.2f}%")
-
-if __name__ == "__main__":
-    main()
