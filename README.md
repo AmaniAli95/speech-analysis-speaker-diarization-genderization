@@ -4,9 +4,9 @@
 - [Overview](#overview)
 - [Requirements](#requirements)
 - [Getting Started](#getting-started)
-  - [Dataset](#prerequisites)
-  - [Training](#installation)
-  - [Testing](#configuration)
+  - [Dataset](#dataset)
+  - [Training](#training)
+  - [Testing](#testing)
 - [File Structure](#file-structure)
 - [Sample Usage](#sample-usage)
 
