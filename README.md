@@ -52,7 +52,7 @@ python train.py
 ```
 
 ### Testing
-o test the gender recognition model, utilize the `test.py` script, which can be used to test audio files or your own voice:
+To test the gender recognition model, utilize the `test.py` script, which can be used to test audio files or your own voice:
 ```bash
 python test.py
 ```
